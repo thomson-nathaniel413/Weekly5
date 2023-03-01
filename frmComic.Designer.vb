@@ -32,10 +32,11 @@ Partial Class frmComic
         Me.lblCostOutput = New System.Windows.Forms.Label()
         Me.btnCalculate = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
-        Me.lblError = New System.Windows.Forms.Label()
+        Me.lblErrorNumber = New System.Windows.Forms.Label()
         Me.radExperience = New System.Windows.Forms.RadioButton()
         Me.radAutographs = New System.Windows.Forms.RadioButton()
         Me.radConvention = New System.Windows.Forms.RadioButton()
+        Me.lblErrorLimit = New System.Windows.Forms.Label()
         CType(Me.picComic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpBadgeSelect.SuspendLayout()
         Me.SuspendLayout()
@@ -139,16 +140,16 @@ Partial Class frmComic
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = False
         '
-        'lblError
+        'lblErrorNumber
         '
-        Me.lblError.AutoSize = True
-        Me.lblError.Font = New System.Drawing.Font("Stencil", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblError.ForeColor = System.Drawing.Color.Red
-        Me.lblError.Location = New System.Drawing.Point(30, 567)
-        Me.lblError.Name = "lblError"
-        Me.lblError.Size = New System.Drawing.Size(627, 31)
-        Me.lblError.TabIndex = 9
-        Me.lblError.Text = "Input was invalid; please enter a number"
+        Me.lblErrorNumber.AutoSize = True
+        Me.lblErrorNumber.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblErrorNumber.ForeColor = System.Drawing.Color.Red
+        Me.lblErrorNumber.Location = New System.Drawing.Point(30, 554)
+        Me.lblErrorNumber.Name = "lblErrorNumber"
+        Me.lblErrorNumber.Size = New System.Drawing.Size(491, 24)
+        Me.lblErrorNumber.TabIndex = 9
+        Me.lblErrorNumber.Text = "Input was invalid; please enter a number"
         '
         'radExperience
         '
@@ -183,12 +184,24 @@ Partial Class frmComic
         Me.radConvention.Text = "Convention"
         Me.radConvention.UseVisualStyleBackColor = True
         '
+        'lblErrorLimit
+        '
+        Me.lblErrorLimit.AutoSize = True
+        Me.lblErrorLimit.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblErrorLimit.ForeColor = System.Drawing.Color.Red
+        Me.lblErrorLimit.Location = New System.Drawing.Point(30, 585)
+        Me.lblErrorLimit.Name = "lblErrorLimit"
+        Me.lblErrorLimit.Size = New System.Drawing.Size(573, 24)
+        Me.lblErrorLimit.TabIndex = 10
+        Me.lblErrorLimit.Text = "Input was invalid; groups must be 1 to 20 people"
+        '
         'frmComic
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(728, 744)
-        Me.Controls.Add(Me.lblError)
+        Me.Controls.Add(Me.lblErrorLimit)
+        Me.Controls.Add(Me.lblErrorNumber)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblCostOutput)
@@ -221,5 +234,6 @@ Partial Class frmComic
     Friend WithEvents lblCostOutput As Label
     Friend WithEvents btnCalculate As Button
     Friend WithEvents btnClear As Button
-    Friend WithEvents lblError As Label
+    Friend WithEvents lblErrorNumber As Label
+    Friend WithEvents lblErrorLimit As Label
 End Class

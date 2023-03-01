@@ -46,7 +46,7 @@ Partial Class frmComic
         Me.picComic.Image = CType(resources.GetObject("picComic.Image"), System.Drawing.Image)
         Me.picComic.Location = New System.Drawing.Point(1, 0)
         Me.picComic.Name = "picComic"
-        Me.picComic.Size = New System.Drawing.Size(680, 212)
+        Me.picComic.Size = New System.Drawing.Size(726, 212)
         Me.picComic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picComic.TabIndex = 0
         Me.picComic.TabStop = False
@@ -56,7 +56,7 @@ Partial Class frmComic
         Me.lblComic.AutoSize = True
         Me.lblComic.Font = New System.Drawing.Font("Comic Sans MS", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblComic.ForeColor = System.Drawing.Color.OrangeRed
-        Me.lblComic.Location = New System.Drawing.Point(133, 227)
+        Me.lblComic.Location = New System.Drawing.Point(158, 227)
         Me.lblComic.Name = "lblComic"
         Me.lblComic.Size = New System.Drawing.Size(424, 39)
         Me.lblComic.TabIndex = 1
@@ -67,7 +67,7 @@ Partial Class frmComic
         Me.lblGroupIndicator.AutoSize = True
         Me.lblGroupIndicator.Font = New System.Drawing.Font("Cooper Black", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblGroupIndicator.ForeColor = System.Drawing.Color.OrangeRed
-        Me.lblGroupIndicator.Location = New System.Drawing.Point(190, 289)
+        Me.lblGroupIndicator.Location = New System.Drawing.Point(215, 289)
         Me.lblGroupIndicator.Name = "lblGroupIndicator"
         Me.lblGroupIndicator.Size = New System.Drawing.Size(125, 23)
         Me.lblGroupIndicator.TabIndex = 2
@@ -75,7 +75,7 @@ Partial Class frmComic
         '
         'txtGroupSize
         '
-        Me.txtGroupSize.Location = New System.Drawing.Point(343, 288)
+        Me.txtGroupSize.Location = New System.Drawing.Point(368, 288)
         Me.txtGroupSize.Name = "txtGroupSize"
         Me.txtGroupSize.Size = New System.Drawing.Size(100, 26)
         Me.txtGroupSize.TabIndex = 3
@@ -88,7 +88,7 @@ Partial Class frmComic
         Me.grpBadgeSelect.Controls.Add(Me.radExperience)
         Me.grpBadgeSelect.Font = New System.Drawing.Font("Broadway", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grpBadgeSelect.ForeColor = System.Drawing.Color.OrangeRed
-        Me.grpBadgeSelect.Location = New System.Drawing.Point(51, 331)
+        Me.grpBadgeSelect.Location = New System.Drawing.Point(80, 331)
         Me.grpBadgeSelect.Name = "grpBadgeSelect"
         Me.grpBadgeSelect.Size = New System.Drawing.Size(577, 143)
         Me.grpBadgeSelect.TabIndex = 4
@@ -100,7 +100,7 @@ Partial Class frmComic
         Me.lblCostIndicator.AutoSize = True
         Me.lblCostIndicator.Font = New System.Drawing.Font("Cooper Black", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCostIndicator.ForeColor = System.Drawing.Color.OrangeRed
-        Me.lblCostIndicator.Location = New System.Drawing.Point(161, 518)
+        Me.lblCostIndicator.Location = New System.Drawing.Point(190, 516)
         Me.lblCostIndicator.Name = "lblCostIndicator"
         Me.lblCostIndicator.Size = New System.Drawing.Size(191, 23)
         Me.lblCostIndicator.TabIndex = 5
@@ -111,7 +111,7 @@ Partial Class frmComic
         Me.lblCostOutput.AutoSize = True
         Me.lblCostOutput.Font = New System.Drawing.Font("Cooper Black", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCostOutput.ForeColor = System.Drawing.Color.OrangeRed
-        Me.lblCostOutput.Location = New System.Drawing.Point(395, 518)
+        Me.lblCostOutput.Location = New System.Drawing.Point(424, 516)
         Me.lblCostOutput.Name = "lblCostOutput"
         Me.lblCostOutput.Size = New System.Drawing.Size(100, 23)
         Me.lblCostOutput.TabIndex = 6
@@ -121,7 +121,7 @@ Partial Class frmComic
         '
         Me.btnCalculate.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.btnCalculate.Font = New System.Drawing.Font("Comic Sans MS", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCalculate.Location = New System.Drawing.Point(126, 656)
+        Me.btnCalculate.Location = New System.Drawing.Point(130, 631)
         Me.btnCalculate.Name = "btnCalculate"
         Me.btnCalculate.Size = New System.Drawing.Size(129, 52)
         Me.btnCalculate.TabIndex = 7
@@ -132,7 +132,7 @@ Partial Class frmComic
         '
         Me.btnClear.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.btnClear.Font = New System.Drawing.Font("Comic Sans MS", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClear.Location = New System.Drawing.Point(428, 656)
+        Me.btnClear.Location = New System.Drawing.Point(442, 631)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(129, 52)
         Me.btnClear.TabIndex = 8
@@ -142,11 +142,11 @@ Partial Class frmComic
         'lblError
         '
         Me.lblError.AutoSize = True
-        Me.lblError.Font = New System.Drawing.Font("Stencil", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblError.Font = New System.Drawing.Font("Stencil", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblError.ForeColor = System.Drawing.Color.Red
-        Me.lblError.Location = New System.Drawing.Point(9, 578)
+        Me.lblError.Location = New System.Drawing.Point(30, 567)
         Me.lblError.Name = "lblError"
-        Me.lblError.Size = New System.Drawing.Size(672, 33)
+        Me.lblError.Size = New System.Drawing.Size(627, 31)
         Me.lblError.TabIndex = 9
         Me.lblError.Text = "Input was invalid; please enter a number"
         '
@@ -187,7 +187,7 @@ Partial Class frmComic
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(678, 744)
+        Me.ClientSize = New System.Drawing.Size(728, 744)
         Me.Controls.Add(Me.lblError)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnCalculate)

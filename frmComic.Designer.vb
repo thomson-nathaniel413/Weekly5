@@ -114,9 +114,9 @@ Partial Class frmComic
         Me.lblCostOutput.ForeColor = System.Drawing.Color.OrangeRed
         Me.lblCostOutput.Location = New System.Drawing.Point(424, 516)
         Me.lblCostOutput.Name = "lblCostOutput"
-        Me.lblCostOutput.Size = New System.Drawing.Size(100, 23)
+        Me.lblCostOutput.Size = New System.Drawing.Size(64, 23)
         Me.lblCostOutput.TabIndex = 6
-        Me.lblCostOutput.Text = "$0000.00"
+        Me.lblCostOutput.Text = "$0.00"
         '
         'btnCalculate
         '
@@ -150,6 +150,7 @@ Partial Class frmComic
         Me.lblErrorNumber.Size = New System.Drawing.Size(491, 24)
         Me.lblErrorNumber.TabIndex = 9
         Me.lblErrorNumber.Text = "Input was invalid; please enter a number"
+        Me.lblErrorNumber.Visible = False
         '
         'radExperience
         '
@@ -194,6 +195,7 @@ Partial Class frmComic
         Me.lblErrorLimit.Size = New System.Drawing.Size(573, 24)
         Me.lblErrorLimit.TabIndex = 10
         Me.lblErrorLimit.Text = "Input was invalid; groups must be 1 to 20 people"
+        Me.lblErrorLimit.Visible = False
         '
         'frmComic
         '

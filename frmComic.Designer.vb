@@ -22,6 +22,7 @@ Partial Class frmComic
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmComic))
         Me.picComic = New System.Windows.Forms.PictureBox()
         Me.lblComic = New System.Windows.Forms.Label()
         Me.lblGroupIndicator = New System.Windows.Forms.Label()
@@ -42,27 +43,33 @@ Partial Class frmComic
         'picComic
         '
         Me.picComic.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.picComic.Image = CType(resources.GetObject("picComic.Image"), System.Drawing.Image)
         Me.picComic.Location = New System.Drawing.Point(1, 0)
         Me.picComic.Name = "picComic"
         Me.picComic.Size = New System.Drawing.Size(680, 212)
+        Me.picComic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picComic.TabIndex = 0
         Me.picComic.TabStop = False
         '
         'lblComic
         '
         Me.lblComic.AutoSize = True
-        Me.lblComic.Location = New System.Drawing.Point(216, 231)
+        Me.lblComic.Font = New System.Drawing.Font("Comic Sans MS", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblComic.ForeColor = System.Drawing.Color.OrangeRed
+        Me.lblComic.Location = New System.Drawing.Point(133, 227)
         Me.lblComic.Name = "lblComic"
-        Me.lblComic.Size = New System.Drawing.Size(227, 20)
+        Me.lblComic.Size = New System.Drawing.Size(424, 39)
         Me.lblComic.TabIndex = 1
         Me.lblComic.Text = "Comic Convention Registration"
         '
         'lblGroupIndicator
         '
         Me.lblGroupIndicator.AutoSize = True
-        Me.lblGroupIndicator.Location = New System.Drawing.Point(216, 288)
+        Me.lblGroupIndicator.Font = New System.Drawing.Font("Cooper Black", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGroupIndicator.ForeColor = System.Drawing.Color.OrangeRed
+        Me.lblGroupIndicator.Location = New System.Drawing.Point(190, 289)
         Me.lblGroupIndicator.Name = "lblGroupIndicator"
-        Me.lblGroupIndicator.Size = New System.Drawing.Size(90, 20)
+        Me.lblGroupIndicator.Size = New System.Drawing.Size(125, 23)
         Me.lblGroupIndicator.TabIndex = 2
         Me.lblGroupIndicator.Text = "Group size:"
         '
@@ -79,9 +86,11 @@ Partial Class frmComic
         Me.grpBadgeSelect.Controls.Add(Me.radConvention)
         Me.grpBadgeSelect.Controls.Add(Me.radAutographs)
         Me.grpBadgeSelect.Controls.Add(Me.radExperience)
-        Me.grpBadgeSelect.Location = New System.Drawing.Point(126, 331)
+        Me.grpBadgeSelect.Font = New System.Drawing.Font("Broadway", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.grpBadgeSelect.ForeColor = System.Drawing.Color.OrangeRed
+        Me.grpBadgeSelect.Location = New System.Drawing.Point(51, 331)
         Me.grpBadgeSelect.Name = "grpBadgeSelect"
-        Me.grpBadgeSelect.Size = New System.Drawing.Size(431, 143)
+        Me.grpBadgeSelect.Size = New System.Drawing.Size(577, 143)
         Me.grpBadgeSelect.TabIndex = 4
         Me.grpBadgeSelect.TabStop = False
         Me.grpBadgeSelect.Text = "Select Badge Type:"
@@ -89,45 +98,55 @@ Partial Class frmComic
         'lblCostIndicator
         '
         Me.lblCostIndicator.AutoSize = True
-        Me.lblCostIndicator.Location = New System.Drawing.Point(206, 549)
+        Me.lblCostIndicator.Font = New System.Drawing.Font("Cooper Black", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCostIndicator.ForeColor = System.Drawing.Color.OrangeRed
+        Me.lblCostIndicator.Location = New System.Drawing.Point(161, 518)
         Me.lblCostIndicator.Name = "lblCostIndicator"
-        Me.lblCostIndicator.Size = New System.Drawing.Size(133, 20)
+        Me.lblCostIndicator.Size = New System.Drawing.Size(191, 23)
         Me.lblCostIndicator.TabIndex = 5
         Me.lblCostIndicator.Text = "Registration cost:"
         '
         'lblCostOutput
         '
         Me.lblCostOutput.AutoSize = True
-        Me.lblCostOutput.Location = New System.Drawing.Point(387, 549)
+        Me.lblCostOutput.Font = New System.Drawing.Font("Cooper Black", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCostOutput.ForeColor = System.Drawing.Color.OrangeRed
+        Me.lblCostOutput.Location = New System.Drawing.Point(395, 518)
         Me.lblCostOutput.Name = "lblCostOutput"
-        Me.lblCostOutput.Size = New System.Drawing.Size(76, 20)
+        Me.lblCostOutput.Size = New System.Drawing.Size(100, 23)
         Me.lblCostOutput.TabIndex = 6
         Me.lblCostOutput.Text = "$0000.00"
         '
         'btnCalculate
         '
+        Me.btnCalculate.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.btnCalculate.Font = New System.Drawing.Font("Comic Sans MS", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCalculate.Location = New System.Drawing.Point(126, 656)
         Me.btnCalculate.Name = "btnCalculate"
         Me.btnCalculate.Size = New System.Drawing.Size(129, 52)
         Me.btnCalculate.TabIndex = 7
         Me.btnCalculate.Text = "Calculate"
-        Me.btnCalculate.UseVisualStyleBackColor = True
+        Me.btnCalculate.UseVisualStyleBackColor = False
         '
         'btnClear
         '
+        Me.btnClear.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.btnClear.Font = New System.Drawing.Font("Comic Sans MS", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClear.Location = New System.Drawing.Point(428, 656)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(129, 52)
         Me.btnClear.TabIndex = 8
         Me.btnClear.Text = "Clear"
-        Me.btnClear.UseVisualStyleBackColor = True
+        Me.btnClear.UseVisualStyleBackColor = False
         '
         'lblError
         '
         Me.lblError.AutoSize = True
-        Me.lblError.Location = New System.Drawing.Point(190, 600)
+        Me.lblError.Font = New System.Drawing.Font("Stencil", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblError.ForeColor = System.Drawing.Color.Red
+        Me.lblError.Location = New System.Drawing.Point(9, 578)
         Me.lblError.Name = "lblError"
-        Me.lblError.Size = New System.Drawing.Size(292, 20)
+        Me.lblError.Size = New System.Drawing.Size(672, 33)
         Me.lblError.TabIndex = 9
         Me.lblError.Text = "Input was invalid; please enter a number"
         '
@@ -136,7 +155,7 @@ Partial Class frmComic
         Me.radExperience.AutoSize = True
         Me.radExperience.Location = New System.Drawing.Point(20, 26)
         Me.radExperience.Name = "radExperience"
-        Me.radExperience.Size = New System.Drawing.Size(289, 24)
+        Me.radExperience.Size = New System.Drawing.Size(424, 26)
         Me.radExperience.TabIndex = 0
         Me.radExperience.TabStop = True
         Me.radExperience.Text = "Convention + Superhero Experience"
@@ -147,7 +166,7 @@ Partial Class frmComic
         Me.radAutographs.AutoSize = True
         Me.radAutographs.Location = New System.Drawing.Point(20, 57)
         Me.radAutographs.Name = "radAutographs"
-        Me.radAutographs.Size = New System.Drawing.Size(214, 24)
+        Me.radAutographs.Size = New System.Drawing.Size(310, 26)
         Me.radAutographs.TabIndex = 1
         Me.radAutographs.TabStop = True
         Me.radAutographs.Text = "Convention + Autographs"
@@ -158,7 +177,7 @@ Partial Class frmComic
         Me.radConvention.AutoSize = True
         Me.radConvention.Location = New System.Drawing.Point(20, 88)
         Me.radConvention.Name = "radConvention"
-        Me.radConvention.Size = New System.Drawing.Size(114, 24)
+        Me.radConvention.Size = New System.Drawing.Size(159, 26)
         Me.radConvention.TabIndex = 2
         Me.radConvention.TabStop = True
         Me.radConvention.Text = "Convention"
